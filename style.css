@@ -760,5 +760,20 @@ p {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
+	#link {
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	}
+	.fa-instagram{
+		font-size: 50px;
+		color: 	#E1306C;
+	}
+	.fa-facebook{
+		font-size: 45px;
+		color: #4267B2;
+	}
+	.fa-linkedin{
+		font-size: 50px;
+		color: #0A66C2;
+	}
 }
 /* End  Media Query For Desktop */
