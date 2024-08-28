@@ -167,7 +167,7 @@ p {
 	animation: hamburger_puls 1s ease infinite;
 }
 #header .hamburger .bar {
-	height: 2px;
+	height: 1px;
 	width: 30px;
 	position: relative;
 	background-color: white;
@@ -226,7 +226,7 @@ p {
 #hero h1 {
 	display: block;
 	width: fit-content;
-	font-size: 4rem;
+	font-size: 3rem;
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
@@ -716,6 +716,7 @@ p {
 
 
 	/*footer*/
+	}
 	.fa-instagram{
 		font-size: 50px;
 		color: 	#E1306C;
@@ -729,7 +730,7 @@ p {
 		color: #0A66C2;
 	}
 
-}
+
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
@@ -749,7 +750,7 @@ p {
 		display: inline-block;
 	}
 	#header .nav-list ul li a {
-		font-size: 1.8rem;
+		font-size: 1rem;
 	}
 	#header .nav-list ul a:after {
 		display: none;
@@ -760,5 +761,8 @@ p {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
+	
+	
+
 }
 /* End  Media Query For Desktop */
