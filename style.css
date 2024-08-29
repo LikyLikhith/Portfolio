@@ -272,50 +272,62 @@ p {
 /* Skills Section */
 #skills {
 	background-image: url(./images/skills3.avif);
-	background-size: cover;
+	background-size: calc();
 	background-position: top center;
 	position: relative;
 	z-index: 1;
-}
-#skills .skills {
+	padding: 100px 0; /* Add padding to the whole section */
+  }
+  
+  #skills .services.container {
 	flex-direction: column;
-	text-align: center;
+	max-width: 100px;
+	margin: 0 auto;
+	padding: 100px ;
 	max-width: 1500px;
 	margin: 0 auto;
-	padding: 100px 0;
-}
-
-#skills .skills-top {
-	margin-bottom: 40px; /* Add space between the heading and the skills section */
-}
-#skills .skills-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Change to flex-start to move items to the right */
-    flex-wrap: wrap;
-    margin-top: 50px;
-    gap: 20px; /* Space between items */
-    padding-left: 20px; /* Adjust this value as needed */
-}
-
-#skills .skills-item {
-    flex-basis: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    border-radius: 10px;
-    background-image: url("./images/skills2.jpg");
-    background-size: cover;
-    margin: 10px 5%;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    margin-left: 20px; /* Adjust this value to move each item further to the right */
-}
-
-#skills .skills-item::after {
+  }
+  
+  #skills .service-top {
+	text-align: top;
+	margin-bottom: 0px; /* Space between the heading and the skills section */
+  }
+  
+  #skills .service-bottom {
+	display: flex;
+	justify-content: space-between; /* Space between the two columns */
+	flex-wrap: wrap;
+  }
+  
+  #skills .skills-column {
+	flex-basis: 48%; /* Each column takes up almost half the container */
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+  }
+  
+  #skills .skills-column .service-item {
+	margin-top: 5px;
+	margin-bottom: 5px;
+  }
+  
+  #skills .service-item {
+	flex-basis: 40%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url("./images/skills2.jpg");
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+  }
+  
+  #skills .service-item::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -325,39 +337,40 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: 0.9;
 	z-index: -1;
-}
-#skills .skills-bottom .icon {
-	height: 30px;
+  }
+  
+  #skills .icon {
+	height: 45px;
 	width: 30px;
 	margin-bottom: 10px;
-}
-#skills .service-item .icon img {
-    width: 60px; 
-    height: 50px; 
-    object-fit: contain; 
-}
-
-#skills .skills-item h2 {
+  }
+  
+  #skills .service-item .icon img {
+	width: 40px; 
+	height: 50px; 
+	object-fit: contain; 
+  }
+  
+  #skills .service-item h2 {
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
-}
-#skills .skills-item p {
+  }
+  
+  #skills .service-item p {
 	color: white;
 	text-align: left;
-}
-
-/* End Skills Section */
-
-/* Media Query for Skills Section */
-@media only screen and (min-width: 768px) {
-	/* Skills Section */
-	#skills .skills-bottom .skills-item {
-		flex-basis: 45%;
-		margin: 2.5%;
-		padding-left: 60px; /* Adjust padding for medium screens */
+  }
+  
+  /* Media Query for Skills Section */
+  @media only screen and (min-width: 768px) {
+	#skills .skills-column {
+	  flex-basis: 45%;
+	  margin: 2.5%;
 	}
+  }
+  
 	/* End Skills Section */
 }
 
